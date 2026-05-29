@@ -1,0 +1,571 @@
+html {
+	font-size: 100%;
+}
+
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+
+body {
+	background-color: #082029;
+	height: 100%;
+}
+
+
+/*MODULES ***************************************************************/
+
+/*HEADER ************************/
+
+.header_wrapper {
+  position: fixed; /* Changed from 'relative' to 'fixed' */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */ 
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  height: auto; /* You might want to set a specific height */
+}
+
+.header_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 10%; /*(divide height of object by width x 100)*/
+}
+
+
+@media (max-width: 740px) {
+
+  .header_wrapper:after {
+    padding-bottom: 0%; /* Aspect ratio for mobile layout */
+	 z-index: 2000;
+	visibility: hidden;
+  }
+}
+
+
+
+
+/*MODULE 1  ************************/
+
+
+.module1_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: #082029;
+}
+
+.module1_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 75%; /*(divide height of object by width x 100)*/
+}
+
+
+@media (max-width: 740px) {
+
+  .module1_wrapper:after {
+    padding-bottom: 338%; /* Aspect ratio for mobile layout */
+  }
+}
+
+
+/*MODULE 2 SUBWAY TRAIN ******************************/
+
+.module2_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: #082029;
+ /* border-top: 2px solid #fff;*/
+}
+
+.module2_wrapper:after {
+  content: "";
+  display: block;
+  background: #082029;
+  padding-bottom: 81.6%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .module2_wrapper:after {
+    padding-bottom: 158%; /* Aspect ratio for mobile layout */
+  }
+}
+
+/*MODULE 3  ******************************/
+
+.module3_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid #fff;
+  z-index: 20;
+}
+
+.module3_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 78.1%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .module3_wrapper:after {
+    padding-bottom: 128%; /* Aspect ratio for mobile layout */
+  }
+}
+
+
+/*MODULE 4  ******************************/
+
+.module4_wrapper {
+  display: none;
+}
+
+.module4_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 0%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+  
+  .module4_wrapper {
+    position: relative;
+    width: 100% !important;
+    max-width: 1200px;  
+    margin-right: auto;
+    margin-left: auto;
+    background: none;
+    border-top: 2px solid #fff;
+    z-index: 2;
+    display: block !important;
+  }
+
+  
+  .module4_wrapper:after {
+    padding-bottom: 148.3%; /* Aspect ratio for mobile layout */
+  }
+}
+
+
+
+/*MODULE 6  VIDEO ******************************/
+
+.module6_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  border-top: 2px solid #fff;
+}
+
+.module6_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 91.6%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .module6_wrapper:after {
+    padding-bottom: 169%; /* Aspect ratio for mobile layout */
+  }
+}
+
+/*MODULE 7 ABOUT CRITTER GAMES  ******************************/
+
+.module7_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  border-top: 2px solid #fff;
+}
+
+.module7_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 105%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .module7_wrapper:after {
+    padding-bottom: 285%; /* Aspect ratio for mobile layout */
+  }
+}
+
+
+
+/*END MODULES********************************************************/
+
+
+
+/*FOOTER ******************************/
+
+.footer_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  border-top: 2px solid #fff;
+}
+
+.footer_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 26.3%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .footer_wrapper:after {
+    padding-bottom: 125.6%; /* Aspect ratio for mobile layout */
+  }
+}
+
+
+
+/*END FOOTER ******************************/
+
+/*PROGRESS  ******************************/
+
+.main_progress_wrapper {
+	width: 100%;
+	max-width: 1200px;
+	background-color: #000010;
+	top: -100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.progress_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+}
+
+.progress_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .progress_wrapper:after {
+    padding-bottom: 73.2%; /* Aspect ratio for mobile layout */
+  }
+}	
+
+
+.drawings_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+}
+
+.drawings_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .drawings_wrapper:after {
+    padding-bottom:73.2%; /* Aspect ratio for mobile layout */
+  }
+}	
+
+
+
+.timelapses_wrapper {
+  position: relative;
+  width: 100% !important;
+  max-width: 1200px;  
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+}
+
+.timelapses_wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%; /*(divide height of object by width x 100)*/
+}
+
+@media (max-width: 740px) {
+
+  .timelapses_wrapper:after {
+    padding-bottom: 73.0%; /* Aspect ratio for mobile layout */
+  }
+}	
+
+
+
+
+
+
+.content_wrapper {
+	width: 95%;
+	max-width: 1560px;
+	background-color: #000010;
+	top: -100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 30px;
+}
+
+/*END PROGRESS  ******************************/
+
+/* @group GRID */
+
+.content_grid {
+	width: 90%;
+	max-width: 1200px;
+	display: grid;
+	grid-column-gap:15px;
+	grid-template-columns: repeat(12, 1fr);
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 0px;
+}
+
+.subnav {
+    display: flex;              /* Use flexbox to layout links */
+    justify-content: space-evenly; /* Even spacing of links */
+    align-items: center;        /* Center links vertically */
+    text-align: center;         /* Ensures text is centered */
+    width: 100%;                /* Take full width of container */
+    grid-column: span 12;       /* Your existing grid column span */
+    margin-top: 15px;           /* Top margin as per your existing CSS */
+	margin-bottom: 15px;
+}
+
+.subnav_link {
+    font: 34px "interstate-compressed", sans-serif, Lucida, Verdana; /* Your existing font style */
+    text-decoration: none;      /* Removes underline from links */
+    color: #C1C2C5;             /* Default link color */
+}
+
+.subnav_link:hover {
+    color: #EACD58;             /* Color on hover */
+}
+
+.subnav_link.active {
+    color: #EACD58; /* Highlight color */
+}
+
+
+@media (max-width:400px) {
+
+	.subnav_link {
+    font: 26px "interstate-compressed"; /* Your existing font style */
+    text-decoration: none;      /* Removes underline from links */
+    color: #6F6E6F;             /* Default link color */
+}
+
+}
+
+
+.spread_row {
+    grid-column: span 4;
+    overflow: hidden; /* Keeps any oversized part of the image hidden */
+    position: relative;
+    width: 100%; /* Takes the full width of the container/column */
+    padding-top: 77%; /* Initially sets an approximate aspect ratio, adjust as needed */
+    margin-top: 15px;
+    background-color: #000; /* Optional: in case the image is smaller than the container */
+}
+
+.spread_row img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Covers the area without distorting the ratio */
+    object-position: center; /* Centers the image in the div */
+}
+
+@media (max-width: 740px) {
+    .spread_row {
+        padding-top: 77%; /* Adjusts the aspect ratio on mobile to a more typical 3:2 */
+    }
+}
+
+@media (max-width: 740px) {
+
+	.spread_row {
+		grid-column: span 6;
+		margin-top: 15px;
+	}
+
+}
+
+
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This should crop and fill the area */
+}
+
+.spread_row video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /* Ensure visibility */
+    visibility: visible; /* Override any inherited visibility settings */
+}
+
+#overlayContent {
+    position: relative; /* Confirm positioning context for controls */
+}
+
+
+
+/* @end */
+
+/*OVERLAY***************************/
+
+#imageOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* 90% translucent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it's above other content */
+}
+
+
+#overlayImage {
+    max-width: 100%; /* Ensures the image doesn't exceed the viewport width */
+    max-height: 100%; /* Ensures the image doesn't exceed the viewport height */
+    display: block; /* Removes extra space below the image */
+}
+
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Fixed width for a perfect circle */
+    height: 40px; /* Fixed height for a perfect circle */
+    line-height: 40px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    border: none;
+    background-color: #000; /* Ensured solid background */
+    color: white !important; /* Ensured white text color */
+    border-radius: 50%; /* Circular button */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1050; /* Ensures it is above other content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove any padding that could affect the shape */
+}
+
+
+#closeButton:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+@media (max-width: 740px) {
+    #closeButton {
+        color: #000 !important; /* Ensures the color is white on mobile */
+        background-color: white; /* Optional: Change if needed for mobile visibility */
+		opacity: 0.6 !important;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+}
+
+
+
+#prevButton, #nextButton {
+    cursor: pointer;
+    position: fixed; /* Changed from absolute to fixed to position relative to the viewport */
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+	border-style: none;
+	z-index: 1050; 
+}
+
+#nextButton {
+    right: 50px; /* 50px off the right edge of the window */
+    border-radius: 3px 0 0 3px;
+}
+
+#prevButton {
+    left: 50px; /* 50px off the left edge of the window */
+    border-radius: 0 3px 3px 0;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+@media (max-width: 740px) {
+
+	#prevButton, #nextButton {
+		visibility: hidden;
+	}
+}
+
+.cover {
+    width: 100%; /* Full browser width */
+    height: 100vh; /* Full viewport height */
+    background-image: url('../images/cover.jpg');
+    background-size: contain; /* Ensure the entire image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

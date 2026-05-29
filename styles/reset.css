@@ -1,0 +1,78 @@
+/* RESET ---------------/* ---------------------------------------------------- */
+html {
+    overflow-y: auto;
+    background-color: transparent;
+    height: 100%;
+}
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, input, th, td{margin: 0; padding: 0; border: 0; outline: none; border-spacing:0;} :focus {
+outline: 0;
+}
+
+body, div, img, p, button, input, select, textarea, a {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	background-color: silver;
+}table img {	display:block;	}img {
+	vertical-align: bottom;
+	margin: 0px;
+	border: 0px;
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+}
+
+.frame {
+	border: 1px solid red;
+}
+
+.frame2 {
+	border: 1px solid orange;
+}
+
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+	float: left;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a { -webkit-tap-highlight-color: transparent; }
+
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* END RESET ---------- */
+
+
+
